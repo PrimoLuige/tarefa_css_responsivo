@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+  
+header{
+    color: #fff;
+    background-color: rgb(52, 64, 230);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 10px;
+
+}
+body{
+    background-color: lightgrey;
+}
+.sobreLoja{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 20rem 2rem 20rem;
+    
+}
+
+.sobreLoja img{
+    height: 190px;
+    width: auto;
+}
+.description{
+    color: rgb(52, 64, 230);
+    padding: 10px;
+    width: 60%;
+    margin: 0rem 2rem 6rem 0rem;
+    
+}
+.description hr{
+    color:rgb(52, 64, 230) ;
+}
+.produtos-content{
+    
+    display: flex;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 15px;
+    margin-left: 10%;
+    
+    
+}
+.produtos-content img{
+    height:175px ;
+}
+
+.produtos-content button{
+    background-color:rgb(52, 64, 230) ;
+    border-radius: 8px; 
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    padding: 6px;
+    cursor: pointer;
+}
+.prod-1{
+    width: 20%;
+    display: block;
+}
+.prod-2{
+    width: 20%;
+    display: block;
+}
+.prod-3{
+    width: 20%;
+    display: block;
+}
+.prod-4{
+    width: 20%;
+    display: block;
+}
+#produtos-container h3{
+    font-family: "Roboto", sans-serif;
+    color: rgb(52, 64, 230);
+    margin-left: 13%;
+}
+#produtos-container hr{
+    color: rgb(52, 64, 230);
+    width: 70%;
+    margin-left: 13%;
+}
+@media screen and (max-width:767px){ 
+    
+    .sobreLoja{
+        display: block;
+        max-width: 90%;
+        margin: 1rem 10rem 1rem 10rem;
+    }
+
+    .produtos-content button{
+        width: 100%;
+        display: block;
+    }
+
+    .produtos-content{
+        display: block;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+
+    .sobreLoja{
+        display: block;
+        max-width: 90%;
+        
+    }
+    .produtos-content button{
+        width: 100%;
+        display: block;
+    }
+
+    .produtos-content{
+        display: grid;
+        grid-template-columns: repeat(2,49.5%);
+        row-gap: 2rem;
+    }
+}
